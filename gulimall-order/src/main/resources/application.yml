@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://115.190.35.140:8880/gulimall_oms?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    # nacos的配置
+    nacos:
+      discovery:
+        server-addr: 169.254.8.5:8848
+    # 在注册中心中的名字
+  application:
+    name: gulimall-order
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 9000

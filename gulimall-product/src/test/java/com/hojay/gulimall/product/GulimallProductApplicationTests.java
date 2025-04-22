@@ -16,11 +16,13 @@ class GulimallProductApplicationTests {
     @Test
     void contextLoads() {
 
-        BrandEntity brandEntity = new BrandEntity();
+//        BrandEntity brandEntity = new BrandEntity();
+//
+//        brandEntity.setName("华为");
+//        brandService.save(brandEntity);
+//        System.out.println("保存成功...");
 
-        brandEntity.setName("华为");
-        brandService.save(brandEntity);
-        System.out.println("保存成功...");
+
     }
 
 }
