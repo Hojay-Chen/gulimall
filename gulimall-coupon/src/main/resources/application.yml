@@ -1,28 +1,28 @@
-spring:
-  # 数据库配置
-  datasource:
-    username: root
-    password: root
-    url: jdbc:mysql://115.190.35.140:8880/gulimall_sms?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  cloud:
-    # nacos的配置
-    nacos:
-      # 发现和注册中心的配置
-      discovery:
-        server-addr: 127.0.0.1:8848
-
-  # 应用的名称，会被作为应用在注册中心的唯一标识
-  application:
-    name: gulimall-coupon
-
-# mybatis-plus配置
-mybatis-plus:
-  mapper-locations: classpath:/mapper/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto
-
-# 应用程序的配置
-server:
-  port: 7000
+#spring:
+#  # 数据库配置
+#  datasource:
+#    username: root
+#    password: root
+#    url: jdbc:mysql://115.190.35.140:8880/gulimall_sms?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  cloud:
+#    # nacos的配置
+#    nacos:
+#      # 发现和注册中心的配置
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#
+#  # 应用的名称，会被作为应用在注册中心的唯一标识
+#  application:
+#    name: gulimall-coupon
+#
+## mybatis-plus配置
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
+#
+## 应用程序的配置
+#server:
+#  port: 7000
